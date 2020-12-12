@@ -58,87 +58,77 @@ table {
 }
 /*最外層的wrap*/
 
-/*header的相關設定*/
-.header{
-    position: relative;
+/*portrait的相關設定*/
+.portrait{
+   padding-left: 135px;
+   padding-top: 125px;
 }
 
-.header .portrait{
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 135px;
-    margin-top: 125px;
+.portrait .name{
+   padding-top: 11px;
+   padding-left:10px;
+   font-size: 42px;
 }
 
-.header .portrait p{
-    text-align: center;
+.portrait .company{
+   font-size: 14px;
+   padding-left: 25px;
+   margin-top: 9px;
+   color: #5b5b5b;
 }
 
-.header .portrait .name{
-    font-family: MicrosoftJhengHeiRegular;
-    font-size: 42px;
-}
-
-.header .portrait .company{
-    font-family: MicrosoftJhengHeiRegular;
-    font-size: 14px;
-    color: #4A4A4A;
-    margin-top: 9px;
-}
-
-.header .portrait .jobtitle{
-    font-family: MicrosoftJhengHeiRegular;
-    font-size: 14px;
-    color: #4A4A4A;
-    margin-top: 9px;
-}
-
-.header .infomation .location{
-    width: 28px;
-    height: 36px;
-}
-
-.header .infomation{
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 422px;
-    margin-top: 125px;
-}
-
-.header .infomation .info-1{
-    display: flex;
-}
-
-.header .infomation .info-2{
-    display: flex;
-    margin-top: 15px;
-}
-
-.header .infomation .info-3{
-    display: flex;
-    margin-top: 15px;
-}
-
-.infomation .info-1 p{
+.portrait .jobtitle{
+   font-size: 19px;
    padding-left: 10px;
-   padding-top: 10px;
-   color: #ffffff;
+   padding-top: 8px;
+   color: #757575;
+}
+/*portrait的相關設定*/
+
+.information{
+   padding-left: 422px;
+   margin-top: -255px;
 }
 
-.infomation .info-2 p{
-    padding-left: 10px;
-    padding-top: 5px;
+.information .info-1{
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.information .info-2{
+    display: flex;
+    margin-bottom: 10px;
+ }
+
+ .information .info-3{
+    display: flex;
+ }
+
+ .information .info-1 p{
+    padding-left: 12px;
+    margin-top: 10px;
+    font-size: 18px;
     color: #ffffff;
  }
 
- .infomation .info-3 p{
-    padding-left: 10px;
-    padding-top: 10px;
+ .information .info-2 p{
+    padding-left: 12px;
+    margin-top: 5px;
+    font-size: 18px;
     color: #ffffff;
  }
-/*header的相關設定*/
+
+ .information .info-3 p{
+    padding-left: 12px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffffff;
+ }
+ 
+
+
+
+
 
 
 
