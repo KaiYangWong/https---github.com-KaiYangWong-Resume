@@ -54,7 +54,7 @@ table {
     width: 1024px;
     height: 399px;
     margin: 0 auto;
-    background-image: url(../images/img-headerShape.png);
+    
 }
 /*最外層的wrap*/
 
@@ -125,6 +125,144 @@ table {
     color: #ffffff;
  }
  
+ /*將Modern Web Skills的文字往下推*/
+.header{
+    /*margin-bottom: 250px;*/
+    height: 399px;
+    background-color: #fafafa;
+    background-image: url(../images/img-headerShape.png);
+}
+
+/*設定content的背景顏色*/
+.content{
+    background-color: #fafafa;
+}
+
+/*修改Modern Web Skills的文字*/
+.content h1{
+    font-size: 24px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI";
+    color: #1736dc;
+    text-align: center;
+    padding-top: 130px;
+    margin-bottom: 48px;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.skill-item1{
+    width: 284px;
+    background: #ffffff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.20);
+    border-radius: 6px;
+    border-bottom: 5px solid #f58d23;
+    margin-right: 17px;
+}
+
+.skill-item2{
+    width: 284px;
+    background: #ffffff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.20);
+    border-radius: 6px;
+    border-bottom: 5px solid #539e43;
+    margin-right: 17px;
+}
+
+.skill-item3{
+    width: 284px;
+    background: #ffffff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.20);
+    border-radius: 6px;
+    border-bottom: 5px solid #6762a6;
+}
+
+.skill-item1 img{
+    margin-top: 20px;
+    margin-left: 94px;
+}
+
+.skill-item1 h2{
+    margin-top: 23px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI";
+    color: #4A4A4A;
+}
+
+.skill-item1 ul{
+    width: 220px;
+    font-size: 10px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI";
+    color: #4A4A4A;
+    margin-top: 26px;
+    margin-bottom: 27px;
+    margin-left: 43px;
+}
+
+.skill-item1 ul li{
+    margin-top: 8px;
+}
+
+.skill-item2 img{
+    margin-top: 17px;
+    margin-left: 94px;
+}
+
+.skill-item2 h2{
+    margin-top: 23px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI";
+    color: #4A4A4A;
+}
+
+.skill-item2 ul{
+    width: 220px;
+    font-size: 10px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI";
+    color: #4A4A4A;
+    margin-top: 26px;
+    margin-bottom: 27px;
+    margin-left: 43px;
+}
+
+.skill-item2 ul li{
+    margin-top: 8px;
+}
+
+.skill-item3 img{
+    margin-top: 25px;
+    margin-left: 94px;
+}
+
+.skill-item3 h2{
+    margin-top: 23px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI";
+    color: #4A4A4A;
+}
+
+.skill-item3 ul{
+    width: 220px;
+    font-size: 10px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI";
+    color: #4A4A4A;
+    margin-top: 26px;
+    margin-bottom: 27px;
+    margin-left: 43px;
+}
+
+.skill-item3 ul li{
+    margin-top: 8px;
+}
+
+
+
 
 
 
