@@ -49,6 +49,12 @@ table {
 }
 /*CSS Reset*/
 
+@font-face{
+    font-family: 'MicrosoftJhengHeiRegular';
+    src:url(../fonts/msheij.ttf);
+}
+
+
 /*最外層的wrap*/
 .wrap{
     width: 1024px;
@@ -138,14 +144,14 @@ table {
     background-color: #fafafa;
 }
 
-/*修改Modern Web Skills的文字*/
-.content h1{
+/*Modern Web Skills的標題設定*/
+.Skills{
     font-size: 24px;
     font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI";
-    color: #1736dc;
     text-align: center;
+    color: #1736DC;
     padding-top: 130px;
-    margin-bottom: 48px;
+    padding-bottom: 73px;
 }
 
 .skills{
@@ -201,6 +207,7 @@ table {
     margin-top: 26px;
     margin-bottom: 27px;
     margin-left: 43px;
+    list-style-type: initial;
 }
 
 .skill-item1 ul li{
@@ -228,6 +235,7 @@ table {
     margin-top: 26px;
     margin-bottom: 27px;
     margin-left: 43px;
+    list-style-type: initial;
 }
 
 .skill-item2 ul li{
@@ -255,19 +263,274 @@ table {
     margin-top: 26px;
     margin-bottom: 27px;
     margin-left: 43px;
+    list-style-type: initial;
 }
 
 .skill-item3 ul li{
     margin-top: 8px;
 }
 
+/*Exp標題設定*/
+.Exp{
+  margin-top: 56px;
+  font-size: 24px;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI";
+  text-align: center;
+  color: #1736DC;
+}
 
+/*時間軸的相關設定*/
+.timeline{
+  position: relative;
+  margin-top: 131px;
+}
 
+.timeline ul li{
+   width: 260px;
+   border: 1px solid #fb56bf;
+   border-radius: 15px;
+   padding: 12px;
+   margin-bottom: 10px;
+}
 
+.timeline-itme1 span,.timeline-itme2 span,.timeline-itme3 span{
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI";
+    font-size: 12px;
+    color: #4A4A4A;
+    letter-spacing: 0.53px;
+}
 
+.timeline-itme1 h1,.timeline-itme2 h1,.timeline-itme3 h1{
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI";
+  color:#8A1737;
+  letter-spacing: 0.53px;
+}
 
+.timeline-itme1 h2,.timeline-itme2 h2,.timeline-itme3 h2{
+    margin-top: 12px;
+    font-size: 12px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI";
+    color: #4A4A4A;
+    letter-spacing: 0.53px;
+  }
 
+.timeline-itme1 p,.timeline-itme2 p,.timeline-itme3 p{
+    margin-top: 10px;
+    font-size: 10px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI";
+    color: #9B9B9B;
+    letter-spacing: 0.44px;
+    line-height: 18px;
+}
 
+.timeline .right{
+	margin-right: 200px;
+}
 
+.timeline .left{
+	margin-left: 200px;
+}
 
+/*交錯排列設定使用flex*/
+.right{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.left{
+	display: flex;
+	flex-direction: row;
+}
+/*交錯排列設定使用flex*/ 
+
+/*畫出時間軸*/
+.timeline{
+	position: relative;
+	margin-top: 10%;
+}
+
+.timeline::after{
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 110%;
+	background-color:#D8D8D8;
+	top: 0;
+	bottom: 0;
+    margin-top: -45px;
+	left: 50%;
+	z-index: 1;
+}
+/*畫出時間軸*/
+
+/*時間軸的時間點設定*/
+.timeline .dot-start{
+	position: absolute;
+    top: -50px;
+    z-index: 2;
+}
+
+.timeline .dot-timeItem{
+	position: absolute;
+    margin-top: -5px;
+    z-index: 2;
+}
+
+.timeline img{
+	width: 24px;
+	height: 28px;
+	margin-left: 49%;
+}
+/*時間軸的時間點設定*/
+
+.line-bottom{
+	width: 50px;
+    margin: 0 auto;
+	border-bottom: 3px solid #D8D8D8;;
+}
+
+/*時間軸的相關設定*/
+
+/*work-item的設定*/
+.works h1{
+    font-size: 24px;
+    text-align: center;
+    color: #FB56BF;
+    margin-top: 56px;
+    margin-bottom: 46px;
+}
+
+.work-item{
+    display: flex;
+    justify-content: center;
+}
+
+.work-item1{
+    margin-right: 16px;
+}
+
+.work-item2{
+    margin-right: 16px;
+}
+
+.work-item1 img{
+    background-color: #fdb4e3;
+    padding-top: 35px;
+    padding-left: 80px;
+}
+
+.work-item1 .title{   
+   font-size: 14px;
+   font-family: "MicrosoftJhengHeiBold";
+   font-weight: bold;
+   padding-top: 9px;
+   padding-left: 8px;
+}
+
+.work-item1 .content{
+    font-size: 14px;
+    font-family: "MicrosoftJhengHeiRegular";
+    color: #4A4A4A;
+    padding-top: 7px;
+    padding-left: 8px;
+    padding-bottom: 9px;
+ }
+
+ .work-item2 img{
+     background-color: #424242;
+     padding: 35px 102px 35px 102px;
+ }
+
+ .work-item2 .title{
+    font-size: 14px;
+    font-family: "MicrosoftJhengHeiBold";
+    font-weight: bold;
+    padding-top: 9px;
+    padding-left: 8px;
+ }
+ 
+ .work-item2 .content{
+     font-size: 14px;
+     font-family: "MicrosoftJhengHeiRegular";
+     color: #4A4A4A;
+     padding-top: 7px;
+     padding-left: 8px;
+     padding-bottom: 9px;
+  }
+
+  .work-item3 img{
+    background-color: #8AD7FA;
+    padding: 35px 94px 35px 94px;
+  }
+
+  .work-item3 .title{
+    font-size: 14px;
+    font-family: "MicrosoftJhengHeiBold";
+    font-weight: bold;
+    padding-top: 9px;
+    padding-left: 8px;
+ }
+ 
+.work-item3 .content{
+     font-size: 14px;
+     font-family: "MicrosoftJhengHeiRegular";
+     color: #4A4A4A;
+     padding-top: 7px;
+     padding-left: 8px;
+     padding-bottom: 9px;
+}
+
+.work-item1:hover,.work-item2:hover,.work-item3:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+/*work-item的設定*/
+
+/*About的相關設定*/
+.about h1{
+    margin-top: 98.4px;
+    text-align: center;
+    font-size: 24px;
+    color: #FB56BF;
+}
+
+.about-content{
+    display:flex;
+}
+
+.about-content img{
+    width: 260px;
+    height: 335px;
+    margin-top: 48.6px;
+    margin-left: 176px;
+}
+
+.paragraph{
+    width: 442px;
+    margin-top: 75px;
+    margin-left: 44px;
+    font-size:14px;
+    color: #4A4A4A;
+    line-height:26px;
+}
+
+.paragraph .second{
+    padding-top: 25px;
+}
+/*About的相關設定*/
+
+/*Footer的相關設定*/
+.footer{
+   font-family: 'MicrosoftJhengHeiRegular';
+   margin-top: 74px;
+   background-image: url(../images/img-Looper-bg.png);
+}
+
+.footer p{
+    font-size: 16px;
+    font-family: 'MicrosoftJhengHeiRegular';
+    padding: 34px 368px 32px 369px;
+}
+/*Footer的相關設定*/
 
