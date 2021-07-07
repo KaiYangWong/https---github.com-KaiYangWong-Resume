@@ -8,3 +8,4 @@
   [Pixlr](https://pixlr.com/tw/editor/).<br/>
   是一個線上的圖像編輯器，有免費用的版本喔~
 
+![page-1-cv-page](https://user-images.githubusercontent.com/30917086/124756008-984c7700-df5e-11eb-9d33-69dfcbeb589a.png)
